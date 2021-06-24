@@ -27,3 +27,15 @@ papel = pygame.image.load('imagens/papel.png')
 vidro = pygame.image.load('imagens/vidro.png')
 branco = (255, 255, 255)
 preto = (0, 0, 0)
+
+
+def escrevendoErros(erros):
+    font = pygame.font.SysFont(None, 37)
+    texto = font.render("Erros: "+str(erros), True, branco)
+    tela.blit(texto, (0, 37))
+
+
+def escrevendoPlacar(acertos):
+    font = pygame.font.SysFont(None, 37)
+    texto = font.render("Acertos: "+str(acertos), True, branco)
+    tela.blit(texto, (0, 0))
